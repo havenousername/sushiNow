@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+	<head>
+			<!-- Required meta tags -->
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			<!-- Bootstrap CSS -->
+			<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+			  <!-- Material Design for Bootstrap CSS -->
+			<link rel="stylesheet"
+			  href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+			  integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+			
+			<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+			<link rel="stylesheet" href="slick/slick.css">
+			<link rel="stylesheet" href="slick/slick-theme.css">
+			<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+			<link rel="stylesheet" href="./css/style.css">
+			<title>Sushi Now</title>
+	</head>
+	<body>
+
+		<nav class="nav">
+				<div class="container">
+					<div class="row">
+						<div class="bl col-md-1 first">
+							<p class="logo">now</p>
+							<p class="sushi">Sushi</p>
+						</div>
+						<div class="bl col-md-8 second">
+						<div class="row justify-content-center">
+							<ul class="list-inline nav-tabs">
+								<li class="list-inline-item">
+									<a class="--cook" href="#">Cook page</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="item" href="#">Products</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="item" href="#">Chat Media</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="item" href="#">Contact Us</a>
+								</li>
+							</ul>
+						</div>		
+						</div>
+						<div class="bl col-md-3 third">
+							<div class= "row svgbtn">
+								<div class= "col-md-3">
+									<div class="svgnav"><img src="img/svg/2-layers.svg"></div>
+								</div>
+								<div class="col-md-9">
+									<button type="button" class="but"><a href="#" class="login" data-toggle="modal" data-target="#loginModal">Log
+											In</a></button>
+									<div class="row smallgroup">
+										<div class="col-md-6 question">
+													<p class="cant">Can't log in?</p>
+										</div>
+										<div class="col-md-6 answer">
+											<a class="sign" href="/docs/signup.html">Sign Up</a>
+										</div>	
+										</div>
+									</div>								
+								</div>
+					</div>
+		</nav>
+		
+		<main class="main">
+			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal"
+				aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="email-title" id="loginModal">Log In</h5>
+							 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								 <span aria-hidden="true" class="hidden">&times;</span>
+							 </button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+									<label for="formEmail" class="bmd-label-floating">Email</label>
+									<input type="text" class="form-control" id="formEmail">
+								</div>
+								<div class="form-group">
+									<!-- manually specified -->
+									<label for="formPassword" class="bmd-label-floating">Password</label>
+									<input type="password" class="form-control" id="formPassword">
+									<div><span class="bmd-help">A valid password consists of A-Z letters and 0-9 numbers</span></div>
+									<div class="passwordGroup"></div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="logIn" id="logIn">Log In</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="overview">
+				<div class="container">
+						<div class= "row">
+						<div class= "col-md-5">
+							<h1 class="hid">Hidden</h1>	
+							<h2 class="maindesc">New types of sushi.</h2>
+							<h2 class="maindesc">Straight from Japan!</h2>
+							<p class="loremfirst">
+								Contrary to popular belief, Lorem Ipsum is not simply random text.
+								It has roots in a piece of classical Latin literature from 45 BC,
+								making it over 2000 years old.
+							</p>
+							<button type="reset" class="taste">
+								<a href="#" class="tastel">Taste it!</a>
+							</button>
+						</div> 
+						
+						<div class= "col-md-7">
+							<div class="fotorama"
+									data-autoplay="3000"
+									data-click="true"
+									data-transition="crossfade"
+									data-loop="true">
+								<img src="img/l1.jpg" alt="Baking sushi">
+								<img src="img/l2.jpg" data-fit="contain"  alt="Baking sushi">
+								<img src="img/l3.jpg" alt="Baking sushi">
+							</div>
+						</div>
+		
+							<!-- <div class="slider" id="slider">
+								<div class="sl"><img src="img/l1.jpg"></div>
+								<div class="sl"><img src="img/l2.jpg"></div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div class="orange">
+				<arcticle class="article">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6" >
+								<div class="special">
+									<h2 class="offer">Special Offer</h2>
+									<span class="adv">Become a Sushi Platinum Club Member</span>
+									<p class="det1">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+										industry’s standard
+										dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+										type specimen
+										book.
+										It has survived not only five centuries, but also the leap
+									</p>
+									<button class="button btn2">
+										<a href="#" class="join">Join us</a>
+									</button>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class= "row">
+								 <div class= "col-md-12">
+									<div class="sq ">
+										<img src="img/small img/alex-harvey-34864-unsplash.png" alt="small round picture" class="small1">
+										<strong class="strong">Molly Clark</strong>
+										<span class="spam">commented: Be aware of it!</span>
+										<span class="sec">1m</span>
+									</div>
+
+									<div class="sq sq1">
+										<img src="img/small img/3.png" alt="small round picture" class="small1">
+										<strong class="strong"></strong>
+										<span class="spam slab">Add comment...</span>
+										<span class="sec">1h</span>
+									</div>
+
+									<div class="sq">
+										<img src="img/small img/4.png" alt="small round picture" class="small1">
+										<strong class="strong">Jeremy Huiew</strong>
+										<span class="spam">commented: One of best offers...</span>
+										<span class="sec">1m</span>
+									</div>
+
+									<div class="sq">
+										<img src="img/small img/d.png" alt="small round picture" class="small1">
+										<strong class="strong">John Miller</strong>
+										<span class="spam">commented: Great opportunity...</span>
+										<span class="sec">20m</span>
+									</div>
+								 </div>
+								</div>
+							</div>
+				</arcticle>
+			</div>
+		</main>
+		<section class="sectionone">
+			<div class= "row">
+				<div class= "col-md-1">
+				</div>
+				<div class="col-md-10">
+					<h2 class="fastchoise">Fast choise</h2>
+					<h3 class="ownmeal">Do a meal by you own!</h3>
+					<!-- Flickity HTML init -->
+					<div class="carousel carousel-main" data-flickity>
+						<div class="carousel-cell">
+							<!-- <img class="carousel-cell-image" src="img/menu/1.jpg" alt=""> -->
+							<div class="display1">
+								<div class="black">
+									<h3 class="figurata">Figurata</h3>
+									<p class="loremm">Lorem ipsum dolor sit amet, consectetur 
+<br>adipiscing elit, sed do eiusmod</p>
+									<div class="optionone">
+										<div class="row">
+												<div class="col-md-3">
+													<div class="pricediv">
+														<h4 class="price">2.3$</h4>
+													</div>
+												</div>
+												<div class="col-md-3">
+													<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+												</div>
+												<div class="col-md-3">
+													<h5 class="gramm">128g.</h5>
+												</div>
+												<div class="col-md-3">
+													<label class="contain">
+														<input class="radiobtn" type="radio" name="Radio Button" checked="checked" id="radio">
+														<span class="checkmark"></span>
+													</label>
+												</div>
+										</div>
+									<!-- <button id="circle" class="btn btn-primary" type="button" onclick="myFunction()"></button> -->
+									</div>
+									<div class="optiontwo">
+										<div class="row">
+											<div class="col-md-3">
+												<div class="pricediv">
+													<h4 class="price">6.39$</h4>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+											</div>
+											<div class="col-md-3">
+												<h5 class="gramm">418g.</h5>
+											</div>
+											<div class="col-md-3 containinside" >
+												<label class="contain">
+													<input class="radiobtn" type="radio" name="Radio Button"  id="radio">
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<button class="color" type="button">
+										<a href="#" class="buyit">Buy it</a>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-cell">
+							<!-- <img class="carousel-cell-image" src="img/menu/1.jpg" alt=""> -->
+							<div class="display2">
+								<div class="black">
+									<h3 class="figurata">Figurata</h3>
+									<p class="loremm">Lorem ipsum dolor sit amet, consectetur
+										<br>adipiscing elit, sed do eiusmod</p>
+									<div class="optionone">
+										<div class="row">
+											<div class="col-md-3">
+												<div class="pricediv">
+													<h4 class="price">2.3$</h4>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+											</div>
+											<div class="col-md-3">
+												<h5 class="gramm">128g.</h5>
+											</div>
+											<div class="col-md-3">
+												<label class="contain">
+													<input class="radiobtn" type="radio" name="Radio Button Second" checked="checked" id="radio">
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										</div>
+										<!-- <button id="circle" class="btn btn-primary" type="button" onclick="myFunction()"></button> -->
+									</div>
+									<div class="optiontwo">
+										<div class="row">
+											<div class="col-md-3">
+												<div class="pricediv">
+													<h4 class="price">6.39$</h4>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+											</div>
+											<div class="col-md-3">
+												<h5 class="gramm">418g.</h5>
+											</div>
+											<div class="col-md-3 containinside">
+												<label class="contain">
+													<input class="radiobtn" type="radio" name="Radio Button Second" id="radio">
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<button class="color" type="button">
+										<a href="#" class="buyit">Buy it</a>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-cell">
+							<div class="display3">
+								<div class="black">
+									<h3 class="figurata">Figurata</h3>
+									<p class="loremm">Lorem ipsum dolor sit amet, consectetur
+										<br>adipiscing elit, sed do eiusmod</p>
+									<div class="optionone">
+										<div class="row">
+											<div class="col-md-3">
+												<div class="pricediv">
+													<h4 class="price">2.3$</h4>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+											</div>
+											<div class="col-md-3">
+												<h5 class="gramm">128g.</h5>
+											</div>
+											<div class="col-md-3">
+												<label class="contain">
+													<input class="radiobtn" type="radio" name="Radio Button Third" checked="checked" id="radio">
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										</div>
+										<!-- <button id="circle" class="btn btn-primary" type="button" onclick="myFunction()"></button> -->
+									</div>
+									<div class="optiontwo">
+										<div class="row">
+											<div class="col-md-3">
+												<div class="pricediv">
+													<h4 class="price">6.39$</h4>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+											</div>
+											<div class="col-md-3">
+												<h5 class="gramm">418g.</h5>
+											</div>
+											<div class="col-md-3 containinside">
+												<label class="contain">
+													<input class="radiobtn" type="radio" name="Radio Button Third" id="radio">
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<button class="color" type="button">
+										<a href="#" class="buyit">Buy it</a>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-cell">
+							<!-- <img class="carousel-cell-image" src="img/menu/1.jpg" alt=""> -->
+							<div class="display4">
+								<div class="black">
+									<h3 class="figurata">Figurata</h3>
+									<p class="loremm">Lorem ipsum dolor sit amet, consectetur
+										<br>adipiscing elit, sed do eiusmod</p>
+									<div class="optionone">
+										<div class="row">
+											<div class="col-md-3">
+												<div class="pricediv">
+													<h4 class="price">2.3$</h4>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+											</div>
+											<div class="col-md-3">
+												<h5 class="gramm">128g.</h5>
+											</div>
+											<div class="col-md-3">
+												<label class="contain">
+													<input class="radiobtn" type="radio" name="Radio Button Fourth" checked="checked" id="radio">
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										</div>
+										<!-- <button id="circle" class="btn btn-primary" type="button" onclick="myFunction()"></button> -->
+									</div>
+									<div class="optiontwo">
+										<div class="row">
+											<div class="col-md-3">
+												<div class="pricediv">
+													<h4 class="price">6.39$</h4>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+												<img src="img/small img/4-layers.svg" alt="svg" class="svg">
+											</div>
+											<div class="col-md-3">
+												<h5 class="gramm">418g.</h5>
+											</div>
+											<div class="col-md-3 containinside">
+												<label class="contain">
+													<input class="radiobtn" type="radio" name="Radio Button Fourth" id="radio">
+													<span class="checkmark"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<button class="color" type="button">
+										<a href="#" class="buyit">Buy it</a>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="col-md-1">
+				</div> -->
+			</div>
+		</section>
+		<section class="sectiontwo">
+
+		</section>
+		<footer class="container py-5">
+			<div class="row">
+				<div class="col-6 col-md">
+					<h5>Features</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Most popular</a></li>
+						<li><a class="text-muted" href="#">Sushi history</a></li>
+						<li><a class="text-muted" href="#">Japan kitchen</a></li>
+						<li><a class="text-muted" href="#">Useful links</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>Resources</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Products</a></li>
+						<li><a class="text-muted" href="#">Eco food</a></li>
+						<li><a class="text-muted" href="#">Work opportunity</a></li>
+						<li><a class="text-muted" href="#">Customer Help</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5>About us</h5>
+					<ul class="list-unstyled text-small">
+						<li><a class="text-muted" href="#">Contacts</a></li>
+						<li><a class="text-muted" href="#">Membership</a></li>
+						<li><a class="text-muted" href="#">Membership position</a></li>
+						<li><a class="text-muted" href="#">Tax free pay</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-md">
+					<h5 class="h5">Rate us</h5>
+					<img src="img/small img/036-facebook.svg" alt="Facebook" class="svglogos">
+					<img src="img/small img/3-layers.svg" alt="Instagram" class="svglogos">
+					<img src="img/small img/008-twitter.svg" alt="Twitter" class="svglogos">
+					<img src="img/small img/001-youtube.svg" alt="Youtube" class="svglogos">
+					<div class= "row">
+					 	<div class= "col-md-9 col-md">
+							<small class="become">
+								 <a href="#" class="be">Become a part of family</a>
+						  </small>
+					 	</div>
+						<div class="col-md-9 col-md">
+							<small class="become">English</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class= "row row2">
+				<div class="col-md-2 col-md">
+				</div>
+				<div class= "col-md-2 col-md">
+						<small>Sushi Now Company</small>
+				</div>
+				<div class= "col-md-2 col-md">
+						<small>City Chisinau, st. Tiraspol 1</small>
+				</div>
+				<div class="col-md-2 col-md">
+						<small class="phone">+37379042241</small>
+				</div>
+				<div class="col-md-4 col-md">
+					<small>©Moldova Integrated, All rights reserved.</small>
+				</div>
+			</div>
+		</footer>
+		
+			<!-- Optional JavaScript -->
+			<script src="js/button.js"></script>
+			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+			<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+			<script src="slick/slick.min.js"></script>
+			<script src="js/main.js"></script>
+			<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+				integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous">
+			</script>
+			<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+				integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous">
+			</script>
+			<script>
+				$(document).ready(function () {
+					$('body').bootstrapMaterialDesign();
+				});
+			</script>
+			<script src="js/main.js"></script>
+	</body>
+</html>
