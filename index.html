@@ -10,7 +10,30 @@
 			<link rel="stylesheet"
 			  href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
 			  integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-			
+			<!-- favicons -->
+			<link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/57.png"
+				data-mce-href="/apple-touch-icon-57x57.png">
+			<link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/60.png"
+				data-mce-href="/apple-touch-icon-60x60.png">
+			<link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/72.png"
+				data-mce-href="/apple-touch-icon-72x72.png">
+			<link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/76.png"
+				data-mce-href="/apple-touch-icon-76x76.png">
+			<link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/114.png"
+				data-mce-href="/apple-touch-icon-114x114.png">
+			<link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/120.png"
+				data-mce-href="/apple-touch-icon-120x120.png">
+			<link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/144.png"
+				data-mce-href="/apple-touch-icon-144x144.png">
+			<link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/152.png"
+				data-mce-href="/apple-touch-icon-152x152.png">
+			<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/180.png"
+				data-mce-href="/apple-touch-icon-180x180.png">
+			<link rel="icon" type="image/png" href="./img/favicon/32.png" sizes="32x32" data-mce-href="/favicon-32x32.png">
+			<link rel="icon" type="image/png" href="./img/favicon/192.png" sizes="192x192"
+				data-mce-href="/android-chrome-192x192.png">
+			<link rel="icon" type="image/png" href="./img/favicon/96.png" sizes="96x96" data-mce-href="/favicon-96x96.png">
+			<link rel="icon" type="image/png" href="./img/favicon/16.png" sizes="16x16" data-mce-href="/favicon-16x16.png">
 			<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 			<link rel="stylesheet" href="slick/slick.css">
 			<link rel="stylesheet" href="slick/slick-theme.css">
@@ -58,7 +81,7 @@
 													<p class="cant">Can't log in?</p>
 										</div>
 										<div class="col-md-6 answer">
-											<a class="sign" href="/docs/signup.html">Sign Up</a>
+											<button class="sign" data-toggle="modal" data-target="#signinModal"><p>Sign Up</p></button>
 										</div>	
 										</div>
 									</div>								
@@ -67,15 +90,14 @@
 		</nav>
 		
 		<main class="main">
-			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal"
-				aria-hidden="true">
+			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
 							<h5 class="email-title" id="loginModal">Log In</h5>
-							 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								 <span aria-hidden="true" class="hidden">&times;</span>
-							 </button>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true" class="hidden">&times;</span>
+							</button>
 						</div>
 						<div class="modal-body">
 							<form>
@@ -99,6 +121,78 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal fade hide" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="signinModal"
+				aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="email-title" id="loginModal">Sign In</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true" class="hidden">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+									<!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+									<label for="formName" class="bmd-label-floating">Name</label>
+									<input type="email" class="form-control" id="formName">
+								</div>
+								<div class="form-group">
+									<!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+									<label for="formSurname" class="bmd-label-floating">Surname</label>
+									<input type="email" class="form-control" id="formSurname">
+								</div>
+								<div class="form-group">
+									<!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+									<label for="formEmail" class="bmd-label-floating">Email</label>
+									<input type="email" class="form-control" id="formEmailSingin">
+								</div>
+								<div class="form-group">
+									<!-- manually specified -->
+									<label for="formPassword" class="bmd-label-floating">Password</label>
+									<input type="password" class="form-control" id="formPasswordSignin">
+									<div><span class="bmd-help">A valid password consists of A-Z letters and 0-9 numbers</span></div>
+									<div class="passwordGroup"></div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-3">
+										<!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+										<label for="formDay" class="bmd-label-floating">Day</label>
+										<input type="text" class="form-control" id="formDay">
+									</div>
+									<div class="form-group col-md-3">
+										<!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+										<label for="formMonth" class="bmd-label-floating">Month</label>
+										<input type="text" class="form-control" id="formMonth">
+									</div>
+									<div class="form-group col-md-6">
+										<!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+										<label for="formYear" class="bmd-label-floating">Year</label>
+										<input type="text" class="form-control" id="formYear">
+									</div>
+								</div>
+								<div class="form-group last">
+									<legend class="col-form-label">Sex</legend>
+									<div class="form-check form-check-inline col-md-3">
+										<input class="form-check-input sex" type="radio" name="inlineRadioOptions" id="sex-one" value="Male"
+											checked>
+										<label class="form-check-label label-one" for="inlineRadio1" value="Male">Male</label>
+									</div>
+									<label class="form-check form-check-inline col-md-3">
+										<input class="form-check-input sex" type="radio" name="inlineRadioOptions" id="sex-two" value="Female">
+										<label class="form-check-label label-two" value="Female" for="inlineRadio2">Female</label>
+									</label>
+								</div>	
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="logIn" id="signin-modal">Sign In</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 			<section class="overview">
 				<div class="container">
 						<div class= "row">
@@ -154,7 +248,7 @@
 										It has survived not only five centuries, but also the leap
 									</p>
 									<button class="button btn2">
-										<a href="#" class="join">Join us</a>
+										<a href="#" class="join" data-toggle="modal" data-target="#signinModal">Join us</a>
 									</button>
 								</div>
 							</div>
@@ -171,8 +265,13 @@
 									<div class="sq sq1">
 										<img src="img/small img/3.png" alt="small round picture" class="small1">
 										<strong class="strong"></strong>
-										<span class="spam slab">Add comment...</span>
-										<span class="sec">1h</span>
+										<div class="form-group form-sq">
+											<input type="text" class="form-control" id="sqText" placeholder="Add comment...">
+										</div>
+										<span class="sec">now</span>
+										<a href="#">
+											<div class="img-svg"></div>
+										</a>			
 									</div>
 
 									<div class="sq">
@@ -531,6 +630,14 @@
 					$('body').bootstrapMaterialDesign();
 				});
 			</script>
+			<script src="js/script.js"></script>
 			<script src="js/main.js"></script>
+			<script src="js/ajax.js"></script>
+			<script src="js/chips.js"></script>
+			<script src="js/signup.js"></script>
+			<script src="./js/login.js"></script>
+			<script src="./js/labels.js"></script>
+			<script src="./js/checks.js"></script>
+			<!-- <script src="js/button.js"></!-->
 	</body>
 </html>

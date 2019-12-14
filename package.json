@@ -1,0 +1,26 @@
+{
+  "name": "sushinow",
+  "version": "1.0.0",
+  "description": "this is a website for selling sushi",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "php",
+    "js",
+    "ajax",
+    "html",
+    "sass"
+  ],
+  "author": "Cristea Andrei",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/havenousername/SushiModalWindow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/havenousername/SushiModalWindow/issues"
+  },
+  "homepage": "https://github.com/havenousername/SushiModalWindow#readme"
+}

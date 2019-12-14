@@ -14,7 +14,8 @@ $('.carousel').flickity({
   // autoPlay: true,
   // autoPlay: 5000,
   // setGallerySize: false
-
 });
-
-
+function hideModal() {
+  document.querySelector('#signinModal').classList.remove('show');
+  document.querySelector('.modal-backdrop').classList.remove('show');
+}
